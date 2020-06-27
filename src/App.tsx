@@ -1,9 +1,14 @@
-import React from "react";
-import "~/App.module.css";
+/** @jsx jsx */
+import { css, jsx } from "@emotion/core";
+
+const appStyle = css`
+  text-align: center;
+  color: #222222;
+`;
 
 const App = () => {
   return (
-    <div className="App">
+    <div css={appStyle}>
       <h1>React + Parcel</h1>
       <ul>
         <li>
