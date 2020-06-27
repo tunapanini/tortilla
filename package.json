@@ -1,0 +1,52 @@
+{
+  "name": "tupa-react-minimal-starter",
+  "version": "1.0.0",
+  "description": "A minimal React + Typescript start with parcel",
+  "main": "src/index.tsx",
+  "repository": "https://github.com/tunapanini/tupa-react-minimal-starter",
+  "author": "Euni Han",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "lint": "eslint . --fix --cache --ext js,jsx,ts,tsx",
+    "prettier": "prettier --write *.{json,css,scss,md}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*.{json,css,scss,md}": "prettier --write"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "@types/parcel-env": "^0.0.0",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.0.5",
+    "typescript": "^3.9.5"
+  }
+}
